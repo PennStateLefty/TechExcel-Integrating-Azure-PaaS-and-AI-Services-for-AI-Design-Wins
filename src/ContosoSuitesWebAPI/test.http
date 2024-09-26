@@ -1,0 +1,5 @@
+POST http://127.0.0.1:5292/Chat
+Content-Type: application/json
+{
+    "message": "Which bookings do not currently have hotel rooms associated with them?"
+}
