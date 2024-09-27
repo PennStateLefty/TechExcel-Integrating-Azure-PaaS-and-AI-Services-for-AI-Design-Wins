@@ -2,10 +2,24 @@
   "version": "0.2.0",
   "configurations": [
     {
+      "name": "Python Debugger: Attach using Process Id",
+      "type": "debugpy",
+      "request": "attach",
+      "processId": "${command:pickProcess}"
+    },
+    {
       "name": "Attach to .NET Functions",
       "type": "coreclr",
       "request": "attach",
       "processId": "${command:azureFunctions.pickProcess}"
+    },
+    {
+      "type": "debugpy",
+      "request": "launch",
+      "name": "Streamlit Debugger",
+      "module": "streamlit",
+      "args": ["run", "${file}", "--server.port", "2000"],
+      "console": "integratedTerminal"
     }
   ]
 }

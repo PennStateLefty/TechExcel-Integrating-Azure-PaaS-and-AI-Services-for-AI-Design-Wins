@@ -8,7 +8,11 @@ openai/
 aiwins/
 .venv/
 
-LabReload/
+labreload/
+
+__azurite*.json
+__blobstorage__/
+__queuestorage__/
 
 secrets.toml
 secrets.*.toml
